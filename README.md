@@ -26,3 +26,7 @@
 - Install type express: yarn add @types/express --dev
 - Add Nodemon: yarn add typescript nodemon  ts-node --dev
 - define check port list: yarn server
+
+### add mongoose connect mongoDB
+- yarn add mongoose
+- add type: yarn add @types/mongoose --dev
