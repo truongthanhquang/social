@@ -1,0 +1,8 @@
+{
+  "name": "BeautySocial",
+  "version": "1.0.0",
+  "description": "Social network for Beauty Aplication",
+  "main": "src/server.ts",
+  "author": "QuangTT",
+  "license": "MIT"
+}
