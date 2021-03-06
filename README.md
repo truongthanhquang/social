@@ -20,3 +20,9 @@
 ### TSC config
 - tsc --init
 - Reference: https://www.staging-typescript.org/tsconfig
+
+### add node express
+- yarn add express
+- Install type express: yarn add @types/express --dev
+- Add Nodemon: yarn add typescript nodemon  ts-node --dev
+- define check port list: yarn server
