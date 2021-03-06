@@ -32,3 +32,12 @@
 - add type: yarn add @types/mongoose --dev
 - add dotenv config: yarn add dotenv
 - add cross-env: yarn add cross-env --dev
+
+### Middleware
+- Add HPP
+- Add Helmet
+- Add morgan
+- Add cors
+- add winston
+- Add type hpp, cors, morgan --dev
+
