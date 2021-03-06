@@ -30,3 +30,5 @@
 ### add mongoose connect mongoDB
 - yarn add mongoose
 - add type: yarn add @types/mongoose --dev
+- add dotenv config: yarn add dotenv
+- add cross-env: yarn add cross-env --dev

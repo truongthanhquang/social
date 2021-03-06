@@ -27,13 +27,16 @@ class App {
 
   private connectToDatabase() {
     try {
-      const connectString =
-        "mongodb+srv://chatbox_sa:YdnMw4hIqtroyOgC@master.2ibme.mongodb.net/beauty_social?retryWrites=true&w=majority";
+      const connectString = process.env.MONGODB_URI;
+      if(!connectString){
+          console.log('ConnectionString is invalid');
+          return;
+      }
       mongoose.connect(connectString, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify: false,
-        useCreateIndex: true,
+        useCreateIndex: true
       });
 
       console.log("Database connected.......");
