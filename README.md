@@ -41,3 +41,14 @@
 - add winston
 - Add type hpp, cors, morgan --dev
 
+### Validate variable ENV
+- yarn add envalid
+
+### Config modules in tsconfig
+- yarn add tsconfig-paths --dev
+- "paths": {
+-     "*":["node_modules/*"],
+-     "@modules/*":["modules/*"],
+-     "@core/*":["core/*"]
+-   }
+
