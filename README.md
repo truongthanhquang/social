@@ -52,3 +52,15 @@
 -     "@core/*":["core/*"]
 -   }
 
+### Add gravatar
+- yarn add gravatar
+- yarn add @types/gravatar --dev
+
+### Add bcryptjs
+- yarn add bcryptjs
+- yarn add @types/bcryptjs --dev
+
+### Add jsonWebtoken
+- yarn add jsonwebtoken
+- yarn add @types/jsonwebtoken --dev
+
