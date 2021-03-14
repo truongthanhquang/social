@@ -2,8 +2,8 @@ import winston, { loggers } from 'winston';
 
 const Logger: winston.Logger = winston.createLogger({
     transports: [
-        new winston.transports.File({filename: 'error.log',level: 'error'}),
-        new winston.transports.File({filename:'combine.log'})
+        new winston.transports.File({filename: 'logs/error.log',level: 'error'}),
+        new winston.transports.File({filename:'logs/combine.log'})
     ],
     format: winston.format.combine(
         winston.format.colorize({all: true}),
