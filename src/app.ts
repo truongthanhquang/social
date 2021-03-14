@@ -1,5 +1,5 @@
 import { Route } from "@core/interfaces";
-import express from "express";
+import express, { urlencoded } from "express";
 import mongoose from "mongoose";
 import hpp from 'hpp';
 import morgan from 'morgan';
@@ -16,11 +16,12 @@ class App {
 
   constructor(route: Route[]) {
     this.app = express();
-    this.port = process.env.PORT || 5001;
+    this.port = process.env.PORT || 5002;
     this.production = process.env.NODE_ENV == 'production' ? true: false;
-    this.initializeRoute(route);
+    // this.initializeRoute(route);
     this.connectToDatabase();
     this.initializeMiddleware();
+    this.initializeRoute(route);
   }
 
   public listen() {
@@ -46,6 +47,8 @@ class App {
           this.app.use(cors({origin:true, credentials:true}));
       }
       this.app.use(errorMiddleware);
+      this.app.use(express.json());
+      this.app.use(urlencoded({extended: true}));
   }
 
 
