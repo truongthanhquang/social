@@ -64,3 +64,7 @@
 - yarn add jsonwebtoken
 - yarn add @types/jsonwebtoken --dev
 
+### Add validate
+- yarn add class-validator
+- yarn add class-transformer
+
